@@ -1,0 +1,119 @@
+/* index */
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #c8e6fa;
+  box-sizing: border-box;
+  /* width: 1440px; */
+  /* height: 1024px; */
+}
+
+/* Container for positioning all elements */
+.container {
+  position: relative;
+  text-align: left;
+  padding-top: 150px;
+  padding-left: 173px;
+  width: auto;
+  height: auto;
+}
+
+/* Circle Styling */
+.circle {
+  position: absolute;
+  top: 150px;
+  left: 15%;
+  width: 270px;
+  height: 265px;
+  background-color: #505a5b;
+  border-radius: 50%;
+  margin-left: 0;
+}
+
+/* Greeting Text Styling */
+.greeting p {
+  font-family: 'Playfair Display', serif;
+  font-size: 57px;
+  color: #2c2c2c;
+  position: absolute;
+  left: 40%;
+  top: 217px;
+  margin: 0;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.hello {
+  font-weight: normal;
+}
+
+.im {
+  font-style: italic;
+}
+
+.name {
+  font-weight: bold;
+}
+
+/* Description Text Styling */
+.description p {
+  font-family: 'Crimson Text', serif;
+  font-size: 22px;
+  color: #2d2d2d;
+  position: absolute;
+  left: 12%;
+  top: 503px;
+  width: 966px;
+  height: 74px;
+  font-style: italic;
+  text-align:center;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* LinkedIn Link Styling */
+.linkedin {
+  position: absolute;
+  left: 23.15px;
+  top: 15px;
+}
+
+.linkedin a {
+  font-family: 'Inter', sans-serif;
+  color: #4a4a4a;
+  text-decoration: underline;
+  font-size: 21px;
+}
+
+.linkedin a:hover {
+  color: #2c2c2c;
+}
+
+ /* Navigation Buttons Styling */
+ .nav-buttons {
+  position: absolute;
+  top: 18px;
+  left: 908px;
+}
+
+.nav-button {
+  background-color: #505A5B;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  padding: 7px 5px;
+  border-radius: 45.69px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background-color: #505A5B;
+}
+

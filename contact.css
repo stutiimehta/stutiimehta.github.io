@@ -1,0 +1,123 @@
+/* contact */
+body {
+    background-color: #404348;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contact-form-container {
+    background-color: #C8E6FA;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Increased width */
+    max-width: 800px; /* Adjusted max-width for responsiveness */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+form h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+label {
+    color: black;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    background-color: #ffffff;
+    color: black;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+button {
+    background-color: #C8E6FA;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: #b0d4ed;
+}
+
+.linkedin-link {
+    margin-top: 10px;
+    color: #C8E6FA;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px;
+    align-self: flex-end;
+}
+
+.linkedin-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Navigation Buttons Styling */
+.nav-buttons {
+    position: absolute;
+    top: 18px;
+    left: 908px;
+  }
+  
+  .nav-button {
+    background-color: #505A5B;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    padding: 7px 5px;
+    border-radius: 45.69px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .nav-button:hover {
+    background-color: #505A5B;
+  }
+
+
+/* LinkedIn Link Styling */
+.linkedin {
+    position: absolute;
+    left: 23.15px;
+    top: 15px;
+  }
+  
+  .linkedin a {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 21px;
+  }
+  
+  .linkedin a:hover {
+    color: #2c2c2c;
+  }

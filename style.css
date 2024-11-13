@@ -1,0 +1,78 @@
+body {
+    background-color: #d3eaf7;
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+    padding: 0;
+}
+.greeting {
+    font-size: 48px;
+    color: #2C2C2C;
+    padding: 20px;
+    margin-left: 3%;
+}
+.info-container {
+    display: flex;
+    align-items: baseline;
+    padding: 20px;
+}
+.personal-info, .about-me {
+    background-color: #4a4a4a;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1;
+}
+.about-me {
+    background-color: #B3D9FF;
+    color: #2C2C2C;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.section {
+    background-color: #B3D9FF;
+    color: #2C2C2C;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1;
+    width: auto;
+    text-align: center;
+}
+.section h2 {
+    margin: 0;
+    color: #2C2C2C;
+    text-align: center;
+}
+.section ul {
+  color: #2C2C2C;
+  text-align: center;
+}
+ /* Navigation Buttons Styling */
+ .nav-buttons {
+    position: absolute;
+    top: 18px;
+    left: 908px;
+  }
+  
+  .nav-button {
+    background-color: #505A5B;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    padding: 7px 5px;
+    border-radius: 45.69px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .nav-button:hover {
+    background-color: #505A5B;
+  }
+
