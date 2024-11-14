@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #C8E6FA; /* Light blue background */
+  background-color: #d3eaf7; /* Light blue background */
   color: black;
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@ header h1 {
 
 /* Project Section */
 .project-section {
-  background-color: #fff;
+  background-color: #B3D9FF;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -52,7 +52,7 @@ header h1 {
   font-weight: 600;
   font-size: 25.74px;
   color: white;
-  background-color: #1e0a6e;
+  background-color: #4a4a4a;
   padding: 10px;
   text-align: center;
   border-radius: 5px;
@@ -142,7 +142,7 @@ header h1 {
 .nav-buttons {
   position: absolute;
   top: 18px;
-  left: 908px;
+  left: 1010px;
 }
 
 .nav-button {
