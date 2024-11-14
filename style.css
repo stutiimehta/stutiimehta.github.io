@@ -1,78 +1,183 @@
+/* projects */
+/* General Body Layout */
 body {
-    background-color: #d3eaf7;
-    font-family: 'Crimson Text', serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #d3eaf7; /* Light blue background */
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* height: 100vh; */
+  overflow-y: auto;
+  flex-direction: column;
+  padding: 50px 20px;
 }
-.greeting {
-    font-size: 48px;
-    color: #2C2C2C;
-    padding: 20px;
-    margin-left: 3%;
+
+/* Page Title */
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.info-container {
-    display: flex;
-    align-items: baseline;
-    padding: 20px;
+
+/* Project Section */
+.project-section {
+  background-color: #B3D9FF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  /* max-width: 1000px; */
+  /* width: 100%; */
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
-.personal-info, .about-me {
-    background-color: #4a4a4a;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    flex: 1;
+
+/* Project Title and Subtitle */
+.project-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #1e0a6e;
+  text-align: center;
+  margin-bottom: 10px;
 }
-.about-me {
-    background-color: #B3D9FF;
-    color: #2C2C2C;
+
+.project-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 25.74px;
+  color: white;
+  background-color: #4a4a4a;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
-.container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+
+/* Project Description */
+.project-description {
+  background-color: #404348; /* Dark gray background */
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1ppx;
+  padding: 20px;
+  border-radius: 10px;
 }
-.section {
-    background-color: #B3D9FF;
-    color: #2C2C2C;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    flex: 1;
-    width: auto;
-    text-align: center;
-}
-.section h2 {
-    margin: 0;
-    color: #2C2C2C;
-    text-align: center;
-}
-.section ul {
-  color: #2C2C2C;
+
+/* Links */
+.project-link {
+  font-size: 20px;
+  color: white;
+  background-color: #1e0a6e;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
   text-align: center;
 }
- /* Navigation Buttons Styling */
- .nav-buttons {
-    position: absolute;
-    top: 18px;
-    left: 908px;
-  }
-  
-  .nav-button {
-    background-color: #505A5B;
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    padding: 7px 4px;
-    border-radius: 45.69px;
-    margin: 0;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-  }
-  
-  .nav-button:hover {
-    background-color: #505A5B;
+
+.project-link:hover {
+  background-color: #1e0a6e;
+}
+
+/* Images Container */
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual Image and Description */
+.image-description {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.project-image {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .project-section {
+    padding: 10px;
   }
 
+  .project-title {
+    font-size: 40px;
+  }
+
+  .project-subtitle {
+    font-size: 30px;
+  }
+
+  .project-description {
+    font-size: 16px;
+  }
+
+  .images-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-image {
+    width: 80%;
+  }
+}
+
+
+/* Navigation Buttons Styling */
+.nav-buttons {
+  position: absolute;
+  top: 18px;
+  left: 1010px;
+}
+
+.nav-button {
+  background-color: #505A5B;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  padding: 7px 5px;
+  border-radius: 45.69px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background-color: #505A5B;
+}
+
+
+/* LinkedIn Link Styling */
+.linkedin {
+  position: absolute;
+  left: 23.15px;
+  top: 15px;
+}
+
+.linkedin a {
+  font-family: 'Inter', sans-serif;
+  color: #4a4a4a;
+  text-decoration: underline;
+  font-size: 21px;
+}
+
+.linkedin a:hover {
+  color: #2c2c2c;
+}
