@@ -38,7 +38,7 @@ body {
 
 .circle img {
     width: 80%; /* Make the image fill the circle */
-    height: auto; /* Maintain aspect ratio */
+    height: 82%; /* Maintain aspect ratio */
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the circle without distortion */
 }
