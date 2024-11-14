@@ -1,183 +1,76 @@
-/* projects */
-/* General Body Layout */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #d3eaf7; /* Light blue background */
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  /* height: 100vh; */
-  overflow-y: auto;
-  flex-direction: column;
-  padding: 50px 20px;
-}
-
-/* Page Title */
-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 70px;
-  font-weight: bold;
-  color: black;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-/* Project Section */
-.project-section {
-  background-color: #B3D9FF;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  /* max-width: 1000px; */
-  /* width: 100%; */
-  margin: 0 auto;
-  margin-bottom: 40px;
-}
-
-/* Project Title and Subtitle */
-.project-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 40px;
-  font-weight: bold;
-  color: #1e0a6e;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.project-subtitle {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  font-size: 25.74px;
-  color: white;
-  background-color: #4a4a4a;
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-  margin-bottom: 30px;
-}
-
-/* Project Description */
-.project-description {
-  background-color: #404348; /* Dark gray background */
-  color: white;
-  font-family: 'Playfair Display', serif;
-  font-size: 1ppx;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* Links */
-.project-link {
-  font-size: 20px;
-  color: white;
-  background-color: #1e0a6e;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-block;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.project-link:hover {
-  background-color: #1e0a6e;
-}
-
-/* Images Container */
-.images-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* Individual Image and Description */
-.image-description {
-  text-align: center;
-  flex: 1;
-  min-width: 200px;
-}
-
-.project-image {
-  width: 80%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-  .project-section {
-    padding: 10px;
-  }
-
-  .project-title {
-    font-size: 40px;
-  }
-
-  .project-subtitle {
-    font-size: 30px;
-  }
-
-  .project-description {
-    font-size: 16px;
-  }
-
-  .images-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-image {
-    width: 80%;
-  }
-}
 
 
-/* Navigation Buttons Styling */
-.nav-buttons {
-  position: absolute;
-  top: 18px;
-  left: 1010px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Page Title -->
+    <header>
+      <h1>MY PROJECTS</h1>
+    </header>
 
-.nav-button {
-  background-color: #505A5B;
-  color: #ffffff;
-  font-family: 'Inter', sans-serif;
-  font-weight: normal;
-  padding: 7px 5px;
-  border-radius: 45.69px;
-  margin: 0;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-}
+    <!-- Project Section for Project 1 -->
+    <section class="project-section">
+      <h2 class="project-title">Project 1</h2>
+      <h3 class="project-subtitle">Interactive Game with Scratch</h3>
+      <div class="project-description">
+        <p>This is an interactive game I created using Scratch. The game is about surviving in a forest, completing challenges, and crafting weapons. The game has various levels and instructions to guide the player through the experience.</p>
+        <div class="images-container">
+          <div class="image-description">
+            <img src="Scratch-1.png" alt="Title screen: Survival The Forest Challenge" class="project-image">
+          </div>
+          <div class="image-description">
+            <img src="Scratch-2.png" class="project-image">
+            <a href="https://scratch.mit.edu/projects/1063612852" target="_blank" class="project-link">Try it</a>
+          </div>
+          <div class="image-description">
+            <img src="Scratch-3.png" alt="Snowy landscape: Craft a spear" class="project-image">
+          </div>
+        </div>
+      </div>
+    </section>
 
-.nav-button:hover {
-  background-color: #505A5B;
-}
+    <!-- Project Section for Project 2 -->
+    <section class="project-section">
+      <h2 class="project-title">Project 2</h2>
+      <h3 class="project-subtitle">Creative Coding with p5</h3>
+      <div class="project-description">
+        <p>This p5.js sketch creates an interactive canvas with four colored quadrants, each containing bouncing circles. Circles are generated by clicking a quadrant, and the canvas can be reset with the spacebar. The project showcases randomness, motion, and user interaction.</p>
+        <iframe src="https://editor.p5js.org/stuti.m0205/full/l3frLhz8e" width="400" height="400"></iframe>      
+      <div class="project-description">
+        <p>This p5.js sketch creates a dynamic, symmetrical design where ellipses are drawn based on the mouse position. You can adjust the symmetry by pressing the '1' or '2' keys to toggle between 6-fold or 12-fold symmetry. The canvas resets to white when clicked. This project demonstrates interactive, mouse-driven art with adjustable geometric patterns.</p>
+        <iframe class="project-iframe" src="https://editor.p5js.org/stuti.m0205/full/_09SuJwL1" width="400" height="400"></iframe>      </div>
+    </section>
 
+    <!-- Project Section for Project 3 -->
+    <section class="project-section">
+      <h2 class="project-title">Project 3</h2>
+      <h3 class="project-subtitle">Problem Solving with Python</h3>
+      <div class="project-description">
+        <p>This Python script is your movie buddy, using the TMDB API to recommend films based on the genres you love. Just enter a few genres, and it’ll fetch the top 6 trending movies with titles, release dates, and ratings. If anything goes wrong, it’ll let you know, and you can exit anytime by typing "exit." A fun way to explore new movies and dive into the power of APIs.</p>
+        <img src="vscode.png" alt="Python script screenshot" class="project-image">
+      </div>
+    </section>
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <a href="index.html" class="nav-button">Home</a>
+      <a href="about.html" class="nav-button">About</a>
+      <a href="projects.html" class="nav-button">Projects</a>
+      <a href="contact.html" class="nav-button">Contact</a>
+  </div>>
+ <!-- LinkedIn Link -->
+ <div class="linkedin">
+  <a href="https://www.linkedin.com/in/stuti-mehta-59a986297/" target="_blank">LinkedIn</a>
+</div>
+  </div>
 
-/* LinkedIn Link Styling */
-.linkedin {
-  position: absolute;
-  left: 23.15px;
-  top: 15px;
-}
-
-.linkedin a {
-  font-family: 'Inter', sans-serif;
-  color: #4a4a4a;
-  text-decoration: underline;
-  font-size: 21px;
-}
-
-.linkedin a:hover {
-  color: #2c2c2c;
-}
+  <script src="script.js"></script>
+</body>
+</html>
