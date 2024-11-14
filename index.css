@@ -24,7 +24,7 @@ body {
 .circle {
     position: absolute;
     top: 150px;
-    left: 15%;
+    left: 20%;
     width: 270px;
     height: 265px;
     background-color: #505a5b;
@@ -37,8 +37,8 @@ body {
 }
 
 .circle img {
-    width: 80%; /* Make the image fill the circle */
-    height: 82%; /* Maintain aspect ratio */
+    width: 99%; /* Make the image fill the circle */
+    height: 99%; /* Maintain aspect ratio */
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the circle without distortion */
 }
@@ -48,7 +48,7 @@ body {
   font-size: 57px;
   color: #2c2c2c;
   position: absolute;
-  left: 40%;
+  left: 45%;
   top: 217px;
   margin: 0;
   line-height: 1.1;
